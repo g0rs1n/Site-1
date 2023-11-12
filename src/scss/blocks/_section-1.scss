@@ -1,0 +1,114 @@
+.page-1{
+    padding: 80px 316px 128px 316px;
+
+    & .wrapper-page-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+}
+.page-1-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    & .page-1-title{
+        max-width: 808px;
+
+        & h1{
+            color: var(--text-color);
+            font-family: var(--font-accent);
+            font-size: 69px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 88px; /* 110% */
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        &::after{
+            content: url(../img/icons/page-1/line.svg);
+            margin-left: 420px;
+        }
+    }
+}
+.page-1-button{
+    display: flex;
+    column-gap: 32px;
+    justify-content: center;
+
+    & .page-1-button__link-1{
+        padding: 12px 32px;
+        border-radius: 7.29px;
+        background-color: var(--color-secondary-bg);
+        color: var(--text-color);
+        font-family: var(--font-accent);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 1px;
+
+        & span{
+            text-transform: uppercase;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    & .page-1-button__link-2{
+        padding: 12px 32px;
+        border-radius: 7.29px;
+        background-color: var(--accent);
+        font-family: var(--font-accent);
+        color: var(--text-color);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 1px;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+.page-1-stats{
+    display: flex;
+    column-gap: 48px;
+
+    & .stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    & h1{
+        color: var(--text-color);
+        font-family: var(--font-main);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 160% */
+    }
+
+    & p{
+        color: var(--text-color);
+        font-family: var(--font-main);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+    }
+    
+    & .stats__p-1{
+        padding-top: 3px;
+    }
+
+    & .stats__p-2{
+        padding-top: 3px;
+    }
+}

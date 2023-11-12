@@ -1,0 +1,21 @@
+:root {
+	--container-width: 1430px;
+	--container-padding: 15px;
+
+	--font-main: 'Space Mono', monospace;
+	--font-accent: 'Roboto', sans-serif;
+
+	--page-bg: #1C1C28;
+	--text-color: #FFFFFF;
+	--text-color-2: #C8C7D8;
+	--color-secondary-bg: #393953;
+	--accent: #6966FF;
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --text-color: #fff;
+}
