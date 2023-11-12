@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3.1,
+    slidesPerView: 3.3,
     spaceBetween: 24,
 });
 
