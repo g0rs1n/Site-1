@@ -35,6 +35,13 @@
         max-width: 690px;
         text-align: center;
     }
+
+    &::after{
+        content: url(../img/icons/page-3/icons-lines.svg); 
+        margin-top: -160px;
+        margin-bottom: 87px;
+        margin-left: 283px;
+    }
 }
 .page-3-link{
     display: flex;
