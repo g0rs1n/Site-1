@@ -1,0 +1,50 @@
+.accordeon-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.accordeon__item{
+    background-color: transparent;
+    border-top: 1px solid var(--color-secondary-bg);
+    border-bottom: 1px solid var(--color-secondary-bg);
+    padding: 24px 0px;
+}
+.accordeon__title{
+    position: relative;
+    color: var(--text-color);
+    font-family: var(--font-accent);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 1px;
+    display: block;
+    background-color: transparent;
+    padding: 0px 320px 0px 0px;
+    width: 100%;
+    text-align: left;
+
+    &::after{
+        content: '';
+        background-image: url(../img/icons/icon-accordeon-plus.svg);
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 0px;
+    }
+}
+.accordeon__text{
+    max-width: 808px;
+    color: var(--text-color-2);
+    font-family: var(--font-accent);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    opacity: 0;
+    max-height: 0px;
+
+    &.accordeon__text-visible{
+        opacity: 1;
+        margin-top: 17px;
+    }
+}
