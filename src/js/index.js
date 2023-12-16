@@ -4,21 +4,20 @@ mobileNav();
 import Swiper from './modules/swiper-section-2.js';
 Swiper();
 
-// const accordeon = document.querySelector('.accordeon');
-// const accordeonTitles = accordeon.querySelectorAll('.accordeon__title');
+// const items = Array.from(document.querySelectorAll(".item"));
+    
+// items.forEach((item) => {
+//     item.addEventListener("click", itemHandler);
+// })
 
-//     accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
-//         accordeonTitle.addEvenListener('click', function() {
-
-//             const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
-
-//             accordeonTitle.classList.toggle('accordeon__title-active');
-//             currentText.classList.toggle('accordeon__text-visible');
-
-//             if (currentText.classList.conteins('accordeon__text-visible')) {
-//                 currentText.style.maxHeight = currentText.scrollHeight + 'px'
-//             } else {
-//                 currentText.style.maxHeight = null
-//             }
-//         })
-//     });
+// function itemHandler(e) {
+//     e.preventDefault();
+//     let currentItem = e.target.closest(".item");
+//     let currentContent = e.target.nextElementSibling;
+//     currentItem.classList.toggle("active");
+//     if (currentItem.classList.contains("active")) {
+//         currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+//     } else {
+//         currentContent.style.maxHeight = 0;
+//     }
+// }
