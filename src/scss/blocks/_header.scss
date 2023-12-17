@@ -23,6 +23,10 @@
 
         & a{
             color: var(--text-color-2);
+
+            &:hover{
+                color: #fff;
+            }
         }
     }
      
