@@ -52,12 +52,16 @@
         letter-spacing: 1px;
         padding: 12px 16px;
 
-        // &:hover{
-        //     border-radius: 7.29px;
-        //     background-color: var(--color-secondary-bg);
-        // }
+        &:hover{
+            border-radius: 7.29px;
+            background-color: var(--color-secondary-bg);
+        }
     }
 
+    .active-tab{
+        border-radius: 7.29px;
+        background-color: var(--color-secondary-bg);
+    }
 }
 
 .discover-content{
