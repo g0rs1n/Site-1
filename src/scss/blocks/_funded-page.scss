@@ -15,6 +15,32 @@
     }
 }
 
+.funded-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.funded-list{
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+
+    & li{
+        color: var(--text-color);
+        font-family: var(--font-accent);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 1px;
+        padding: 12px 16px;
+
+        &:hover{
+            border-radius: 7.29px;
+            background: var(--color-secondary-bg);
+        }
+    }
+}
 
 .funded-content{
     display: grid;
