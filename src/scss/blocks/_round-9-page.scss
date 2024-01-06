@@ -109,6 +109,14 @@
         max-width: 808px;
         text-align: start;
     }
+
+    & .content-text__a{
+        color: var(--accent);
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
 }
 .content-text-title-2{
     padding-top: 64px;

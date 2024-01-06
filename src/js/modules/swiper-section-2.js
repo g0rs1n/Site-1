@@ -6,4 +6,4 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 24,
 });
 
-export default Swiper;
+export default Swiper;   
