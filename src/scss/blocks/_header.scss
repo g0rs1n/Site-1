@@ -1,5 +1,9 @@
 .header{
     padding: 24px 32px;
+
+    @media (max-width: 545px){
+        padding: 24px 10px;
+    }
 }
 .header__row{
     display: flex;
@@ -29,8 +33,6 @@
             }
         }
 
-        // header-item-active
-
         .item-active{
             color: #fff;
         }
@@ -53,7 +55,27 @@
     line-height: 24px; /* 150% */
     letter-spacing: 1px;
 
+    & span{
+        @media (max-width: 546px){
+            display: none;
+        }
+    }
+
     &:hover{
         opacity: 0.8;
+    }
+}
+.button-header{
+    @media(max-width: 1135px) {
+        margin-right: 16px;
+    }
+    @media(max-width: 545px) {
+        margin-right: 13px;
+    }
+}
+.nav{
+
+    @media (max-width: 1135px){
+        display: none;
     }
 }

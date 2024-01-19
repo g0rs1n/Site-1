@@ -5,10 +5,10 @@
 	--width: 40px;
 	--height: 30px;
 
-	--line-height: 4px;
+	--line-height: 3px;
 	--spacing: 6px;
 
-	--color: #000;
+	--color: #fff;
 	--radius: 4px;
 
 	/* Fixed height and width */
@@ -22,6 +22,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (max-width: 500px){
+		--width: 30px;
+		--height: 20px;
+	}
 }
 
 .nav-icon {
@@ -30,6 +35,16 @@
 	height: var(--line-height);
 	background-color: var(--color);
 	border-radius: var(--radius);
+
+	@media (max-width: 400px){
+		margin-left: 8px;
+	}
+	@media (max-width: 377px){
+		margin-left: 10px;
+	}
+	@media (max-width: 356px){
+		margin-left: 13px;
+	}
 }
 
 .nav-icon::before,
@@ -82,11 +97,11 @@
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
+	display: none;
 }
 
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
+@media (max-width: 1135px) {
+	.mobile-nav-btn {
+		display: block;
+	}
+}
