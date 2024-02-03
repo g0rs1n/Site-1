@@ -2,12 +2,30 @@
     display: flex;
     justify-content: center;
     padding: 80px 100px;
+
+    @media (max-width: 1000px){
+        padding-top: 50px;
+    }
+    @media (max-width: 700px){
+        padding-top: 35px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media (max-width: 620px){
+        padding-top: 25px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    @media (max-width: 490px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 .page-6-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0px;
+    padding: 40px 20px;
     border-radius: 16px;
     border: 1px solid linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
     background: linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
@@ -24,6 +42,10 @@
         letter-spacing: 1px;
         margin-bottom: 8px;
         text-align: center;
+
+        @media (max-width: 725px){
+            font-size: 17.5px;
+        }
     }
 
     & h2{
@@ -36,6 +58,33 @@
         line-height: 48px; /* 120% */
         letter-spacing: 1px;
         margin-bottom: 40px;
+
+        @media (max-width: 945px){
+            font-size: 35px;
+            line-height: 42px;
+        }
+        @media (max-width: 845px){
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 805px){
+            font-size: 30px;
+            line-height: 33px;
+        }
+        @media (max-width: 760px){
+            font-size: 28px;
+            line-height: 30px;
+        }
+        @media (max-width: 725px){
+            font-size: 26px;
+            line-height: 27px;
+            margin-bottom: 26px;
+        }
+        @media (max-width: 400px){
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     & a{
@@ -55,6 +104,13 @@
 
         &:hover{
             opacity: 0.8;
+        }
+
+        @media (max-width: 500px){
+            padding: 12px 55px;
+        }
+        @media (max-width: 360px){
+            padding: 12px 45px;
         }
     }
 }
