@@ -1,7 +1,7 @@
 .funded-title{
     display: flex;
     justify-content: center;
-    padding: 80px 0px 40px 0px;
+    padding: 80px 15px 40px 15px;
 
     & h2{
         color: var(--text-color);
@@ -12,6 +12,42 @@
         font-weight: 700;
         line-height: 72px; /* 120% */
         letter-spacing: 1px;
+
+        @media (max-width: 460px){
+            font-size: 57px;
+            line-height: 69px;
+        }
+        @media(max-width: 441px){
+            font-size: 53px;
+            line-height: 67px;
+        }
+        @media (max-width: 414px){
+            font-size: 49px;
+            line-height: 64px;
+        }
+        @media (max-width: 389px){
+            font-size: 47px;
+            line-height: 61px;
+        }
+        @media (max-width: 376px){
+            font-size: 45px;
+            line-height: 58px;
+        }
+        @media (max-width: 363px){
+            font-size: 43px;
+            line-height: 55px;
+        }
+        @media (max-width: 351px){
+            font-size: 42px;
+            line-height: 53px;
+        }
+    }
+
+    @media (max-width: 800px){
+        padding-top: 40px;
+    }
+    @media (max-width: 500px){
+        padding-top: 25px;
     }
 }
 
@@ -39,6 +75,28 @@
             border-radius: 7.29px;
             background: var(--color-secondary-bg);
         }
+
+        @media (max-width: 1070px){
+            padding: 10px 14px;
+        }
+        @media (max-width: 1050px){
+            padding: 7px 11px;
+        }
+    }
+
+    @media (max-width: 1160px){
+        column-gap: 15px;
+    }
+    @media (max-width: 1100px){
+        column-gap: 10px;
+    }
+    @media (max-width: 1030px){
+        column-gap: 7px;
+    }
+    @media (max-width: 1010px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 9px;
     }
 }
 
