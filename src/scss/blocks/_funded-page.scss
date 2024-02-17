@@ -101,24 +101,48 @@
 }
 
 .funded-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 24px;
-    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    padding: 80px 10px;
+}
+.funded-content-block{
+    display: flex;
+    column-gap: 24px;
+
+    @media (max-width: 1231px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
 }
 
 .funded-cards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 280px;
     border-radius: 16px;
     border: 1px solid var(--color-secondary-bg);
     background: var(--color-secondary-bg);
     padding: 24px;
+    max-width: 380px;
+
+    @media (max-width: 834px){
+        row-gap: 200px;
+    }
+}
+
+.funded-wrapper-content-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .funded-card-title{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    margin-bottom: 16px;
 
     & h3{
         color: var(--text-color-2);
@@ -141,7 +165,6 @@
 }
 
 .funded-card-content{
-    margin-bottom: 264px;
 
     & p{
         color: var(--text-color);
@@ -153,26 +176,22 @@
         letter-spacing: 1px;
     }
 }
-.funded-card-content-1{
-    margin-bottom: 293px;
-}
-.funded-card-content-2{
-    margin-bottom: 289px;
-}
-.funded-card-content-5{
-    margin-bottom: 288px;
-}
-.funded-card-content-6{
-    margin-bottom: 267px;
-}
-.funded-card-content-7{
-    margin-bottom: 292px;
-}
-.funded-card-content-8{
-    margin-bottom: 296px;
-}
-
 .funded-card-icons{
     display: flex;
     align-items: flex-start;
+}
+.funded-card-icons-1{
+    padding-top: 27px;
+}
+.funded-card-icons-2{
+    padding-top: 24px;
+}
+.funded-card-icons-4{
+    padding-top: 25px;
+}
+.funded-card-icons-5{
+    padding-top: 51px;
+}
+.funded-card-icons-8{
+    padding-top: 55px;
 }
