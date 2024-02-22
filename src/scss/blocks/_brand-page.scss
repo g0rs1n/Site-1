@@ -3,7 +3,11 @@
 .brand-title-wrapper{
     display: flex;
     justify-content: center;
-    padding: 80px 0px 40px 0px;
+    padding: 80px 15px 40px 15px;
+
+    @media (max-width: 800px){
+        padding-top: 40px;
+    }
 }
 .brand-title{
     display: flex;
@@ -20,6 +24,35 @@
         line-height: 72px; /* 120% */
         letter-spacing: 1px;
         text-align: center;
+
+        @media (max-width: 700px){
+            font-size: 57px;
+            line-height: 69px;
+        }
+        @media (max-width: 500px){
+            font-size: 55px;
+            line-height: 67px;
+        }
+        @media (max-width: 430px){
+            font-size: 53px;
+            line-height: 65px;
+        }
+        @media (max-width: 400px){
+            font-size: 51px;
+            line-height: 63px;
+        }
+        @media (max-width: 371px){
+            font-size: 49px;
+            line-height: 61px;
+        }
+        @media (max-width: 359px){
+            font-size: 48px;
+            line-height: 59px;
+        }
+        @media (max-width: 353px){
+            font-size: 47px;
+            line-height: 57px;
+        }
     }
     & p{
         color: var(--text-color-2);
@@ -41,11 +74,19 @@
     flex-direction: column;
     align-items: center;
     padding: 80px 20px;
+
+    @media (max-width: 800px){
+        padding-top: 35px;
+    }
 }
 .brand-content{
     display: flex;
     flex-direction: column;
     row-gap: 80px;
+
+    @media (max-width: 574px){
+        row-gap: 55px;
+    }
 }
 .brand-content-logo{
     display: flex;
@@ -70,10 +111,20 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+
+    @media (max-width: 850px){
+        row-gap: 25px;
+        align-items: center;
+    }
 }
 .brand-logo-content{
     display: flex;
     column-gap: 24px;
+
+    @media (max-width: 850px){
+        flex-direction: column;
+        row-gap: 24px;
+    }
 }
 .logo-content-block{
     display: flex;
@@ -103,6 +154,23 @@
     & img{
         max-width: 135px;
         max-height: 78px;
+
+        @media (max-width: 450px){
+            max-width: 110px;
+            max-height: 65px;
+        }
+        @media (max-width: 410px){
+            max-width: 95px;
+            max-height: 52px;
+        }
+        @media (max-width: 380px){
+            max-width: 87px;
+            max-height: 45px;
+        }
+        @media (max-width: 360px){
+            max-width: 83px;
+            max-height: 41px;
+        }
     }
 
 }
@@ -151,6 +219,11 @@
     display: flex;
     column-gap: 24px;
     justify-content: center;
+    
+    @media (max-width: 800px){
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 }
 .avatar-content-blog{
     display: flex;

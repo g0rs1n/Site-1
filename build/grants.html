@@ -24,7 +24,7 @@
                 <nav class="nav">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="../discover.html" class="item-link">
+                            <a href="../discover.html#tab_01" class="item-link">
                                 Discover initiatives
                             </a>
                         </li>
@@ -52,13 +52,13 @@
                 </nav>
                 <div class="button-header">
                     <a href="../grants.html" class="button-header__link">
-                        Apply for grant
+                        Apply <span class="button-header__span">for grant</span>
                     </a>
                 </div>
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                </button>
             </div>
-            <!-- <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button> -->
         </div>
     </div>
 </header>
@@ -94,10 +94,22 @@
             </div>
         </div>
         <div class="grants-application">
-            <div class="application-title">
-                <h3 class="application-title__h3">
-                    Grant application
-                </h3>
+            <div class="grants-applacation-wrapper">
+                <div class="application-title">
+                    <h3 class="application-title__h3">
+                        Grant application
+                    </h3>
+                </div>
+                <form class="application-form" action="#!">
+                    <div class="application-input-wrapper">
+                        <input class="application-form__input" type="text" placeholder="Name">
+                        <input class="application-form__input" type="email" placeholder="Email">
+                        <textarea class="application-form__input" placeholder="About you"></textarea>
+                    </div>
+                    <button type="submit" class="application-form__button">
+                        Submit
+                    </button>
+                </form>
             </div>
         </div>
     </div>
